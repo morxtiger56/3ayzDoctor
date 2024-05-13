@@ -1,1 +1,57 @@
-<p>footer works!</p>
+<footer class="w-full bg-primary text-white">
+  <div class="container mx-auto px-2 py-4">
+    <div class="flex flex-wrap justify-between">
+      <div class="flex min-w-[300px] flex-1 gap-10">
+        <div class="flex flex-col gap-4">
+          <h4 class="font-bold">
+            3ayz Doctor
+          </h4>
+          <div class="flex flex-col gap-1">
+            @for(link of firstLinkGroup; track link.label) {
+            <a [href]="link.link"
+              class="after:contents-[''] relative text-sm transition-all after:absolute after:block after:h-[1px] after:w-0 after:bg-white after:transition-all hover:after:w-full">
+              {{link.label}}
+            </a>
+            }
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4 class="font-bold">
+            Services
+          </h4>
+          <div class="flex flex-col gap-1">
+            @for(link of secoundLinkGroup; track link.label) {
+            <a [href]="link.link"
+              class="after:contents-[''] relative text-sm transition-all after:absolute after:block after:h-[1px] after:w-0 after:bg-white after:transition-all hover:after:w-full">
+              {{link.label}}
+            </a>
+            }
+          </div>
+        </div>
+      </div>
+      <div class="flex-1">
+        <div class="flex flex-col gap-4">
+          <h4 class="font-bold">
+            Specializations of doctors
+          </h4>
+          <div class="flex flex-wrap gap-2">
+            @for(link of specializations; track link.id) {
+            <a href="#"
+              class="after:contents-[''] text-wrap relative max-w-[15ch] text-xs transition-all after:absolute after:block after:h-[1px] after:w-0 after:bg-white after:transition-all hover:after:w-full">
+              {{link.data}}
+            </a>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col items-center justify-center gap-4 py-8">
+    <a href="/">
+      <img class="max-w-48 brightness-[10] grayscale" src="/assets/logo.png" alt="">
+    </a>
+    <p>
+      © Copyright 2024. All Rights Reserved
+    </p>
+  </div>
+</footer>

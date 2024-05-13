@@ -1,6 +1,7 @@
 import { AfterViewInit, Directive, ElementRef, Input } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
 
+
 @Directive({
   selector: '[appSwiper]',
   standalone: true,
