@@ -1,16 +1,23 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGlobe, faHome, faKitMedical, faPhone, faPlus, faUserDoctor } from '@fortawesome/free-solid-svg-icons';
+import { DropdownModule } from 'primeng/dropdown';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, DropdownModule, CommonModule, FormsModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 
 export class HeaderComponent {
+
+  selected = 'english'
+
   buttons: {
     label: string,
     icon?: any
@@ -37,5 +44,9 @@ export class HeaderComponent {
       }
     ]
 
-    globeIcon = faGlobe
+  globeIcon = faGlobe
+
+  changeLanguage(value: string) {
+    console.log(value)
+  }
 }

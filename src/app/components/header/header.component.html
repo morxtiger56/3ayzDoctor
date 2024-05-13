@@ -1,11 +1,12 @@
 <header class="flex px-4 py-4 shadow-md">
   <div class="container mx-auto flex items-center justify-between">
     <a href="/">
-      <img class="max-w-48" src="/assets/logo.png" alt="">
+      <img class="w-24 md:w-full max-w-48" src="/assets/logo.png" alt="">
     </a>
     <nav class="hidden md:flex">
       @for(item of buttons; track item.label){
-      <a href="#" class="__ghost_button__  flex items-baseline gap-1 px-2 py-2 text-sm capitalize last:outline-dashed last:outline-1 last:outline-yellow-500">
+      <a href="#"
+        class="__ghost_button__  flex items-baseline gap-1 px-2 py-2 text-sm capitalize last:outline-dashed last:outline-1 last:outline-yellow-500">
         @if(item.icon){
         <fa-icon [icon]="item.icon" class="text-inherit" />
         }
@@ -17,7 +18,8 @@
       Sign up
     </button>
   </div>
-  <button type="button" class="__ghost_button__ w-fit">
-    English <fa-icon [icon]="globeIcon" />
-  </button>
+  <div class="flex items-center mx-2">
+    <p-dropdown class="capitalize" [options]="['arabic', 'english']" [(ngModel)]="selected" placeholder="language" />
+    <fa-icon [icon]="globeIcon" />
+  </div>
 </header>
