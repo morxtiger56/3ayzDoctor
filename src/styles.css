@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 .__primary_button__ {
-  @apply px-4 text-white bg-blue-500 rounded-md h-fit py-2 transition-colors hover:bg-transparent hover:text-blue-500 hover:outline hover:outline-1 hover:outline-blue-500
+  @apply px-4 text-white bg-primary rounded-md h-fit py-2 transition-colors hover:bg-transparent hover:text-primary hover:outline hover:outline-1 hover:outline-primary font-semibold text-sm
 }
 
 .__ghost_button__ {
-  @apply transition-colors hover:text-blue-500
+  @apply transition-colors hover:text-primary
 }

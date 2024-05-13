@@ -1,11 +1,11 @@
-<header class="flex justify-around py-4 shadow-md">
-  <div class="container flex items-center justify-between">
+<header class="flex py-4 px-4 shadow-md">
+  <div class="container mx-auto flex items-center justify-between">
     <a href="/">
       <img class="max-w-48" src="/assets/logo.png" alt="">
     </a>
-    <nav class="flex gap-4 last:outline-dashed last:outline-1 last:outline-yellow-200">
+    <nav class="hidden md:flex">
       @for(item of buttons; track item.label){
-      <a href="#" class="flex items-baseline capitalize gap-1 text-sm __ghost_button__">
+      <a href="#" class="__ghost_button__  flex items-baseline gap-1 px-2 py-2 text-sm capitalize last:outline-dashed last:outline-1 last:outline-yellow-500">
         @if(item.icon){
         <fa-icon [icon]="item.icon" class="text-inherit" />
         }
@@ -17,4 +17,7 @@
       Sign up
     </button>
   </div>
+  <button type="button" class="__ghost_button__ w-fit">
+    English <fa-icon [icon]="globeIcon" />
+  </button>
 </header>
