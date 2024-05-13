@@ -2,8 +2,8 @@
   <app-section-header>
     Welcome، What do you want to look for today?
   </app-section-header>
-  <swiper-container pagination="true" navigation="true" allow-touch-move="true" slides-per-view="2.5" mousewheel="true"
-    keyboard="true" speed="500">
+  <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
+    speed="500">
     @for(item of rating; track item.id){
     <swiper-slide class="p-10">
       <app-card>
@@ -40,8 +40,8 @@
   <app-section-header>
     Book Online Doctor with 3ayz Doctor
   </app-section-header>
-  <swiper-container pagination="true" navigation="true" allow-touch-move="true" slides-per-view="2.5" mousewheel="true"
-    keyboard="true" speed="500">
+  <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
+    speed="500">
     @for(item of rating; track item.id){
     <swiper-slide class="p-10">
       <app-card [full]="true">
@@ -60,8 +60,8 @@
 
 <app-section>
   <app-card [full]="true">
-    <swiper-container class="w-full" allow-touch-move="true" slides-per-view="1" autoplay="true" mousewheel="true"
-      keyboard="true" speed="500">
+    <swiper-container data-dont-resize="true" class="w-full" allow-touch-move="true" slides-per-view="1" autoplay="true"
+      mousewheel="true" keyboard="true" speed="500">
       @for(item of rating; track item.id){
       <swiper-slide>
         <div [ngClass]="'bg-black min-h-[250px] w-full'">
@@ -82,8 +82,8 @@
     enjoy healthy life deals and offers from 3ayz Doctor
   </app-section-header-description>
   <div class="my-4">
-    <swiper-container pagination="true" navigation="true" allow-touch-move="true" slides-per-view="2.5"
-      mousewheel="true" keyboard="true" speed="500">
+    <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
+      speed="500">
       @for(item of rating; track item.id){
       <swiper-slide class="p-10">
         <app-card [full]="true" class="relative">
@@ -114,8 +114,8 @@
   <app-section-header>
     Find doctors in top specialities
   </app-section-header>
-  <swiper-container pagination="true" navigation="true" allow-touch-move="true" slides-per-view="2.5" mousewheel="true"
-    keyboard="true" speed="500">
+  <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
+    speed="500">
     @for(item of rating; track item.id){
     <swiper-slide class="p-10">
       <app-card [full]="true">
@@ -138,7 +138,7 @@
   <app-section-header-description>
     Do this basic things and have a healthy life
   </app-section-header-description>
-  <div class="flex gap-4">
+  <div class="flex flex-col md:flex-row gap-4">
     <div class="bg-black aspect-square flex-1">
     </div>
 
@@ -154,7 +154,7 @@
 </app-section>
 
 <app-section>
-    <app-section-header class="text-center">
-What our users say about us?
-    </app-section-header>
+  <app-section-header class="text-center">
+    What our users say about us?
+  </app-section-header>
 </app-section>

@@ -10,8 +10,8 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ],
   template: `
-    <div [ngClass]='classSet("items-center p-4 gap-4 flex shadow-md", {
-      "flex-col p-1 items-start": full
+    <div [ngClass]='classSet("items-center p-4 gap-4 flex flex-col md:flex-row shadow-md", {
+      "md:flex-col p-1 items-start": full
     })'>
         <ng-content />
       </div>
