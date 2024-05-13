@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.__primary_button__ {
+  @apply px-4 text-white bg-blue-500 rounded-md h-fit py-2 transition-colors hover:bg-transparent hover:text-blue-500 hover:outline hover:outline-1 hover:outline-blue-500
+}
+
+.__ghost_button__ {
+  @apply transition-colors hover:text-blue-500
+}
