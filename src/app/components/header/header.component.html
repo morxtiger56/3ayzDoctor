@@ -21,7 +21,8 @@
     </button>
   </div>
   <div class="flex items-center mx-2">
-    <p-dropdown class="capitalize" [options]="['العربية', 'english']" [(ngModel)]="selected" placeholder="language" />
+    <p-dropdown class="capitalize" optionLabel="name" (onChange)="onChange()" optionValue="code" [options]="locals"
+      [(ngModel)]="activeLocale" placeholder="language" />
     <fa-icon [icon]="globeIcon" />
   </div>
 </header>

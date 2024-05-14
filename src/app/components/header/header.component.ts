@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Inject, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGlobe, faHome, faKitMedical, faPhone, faPlus, faUserDoctor } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +16,18 @@ import { DropdownModule } from 'primeng/dropdown';
 
 export class HeaderComponent {
 
-  selected = 'english'
+  constructor(
+    @Inject(LOCALE_ID) public activeLocale: string
+  ) { }
+
+  locals = [
+    { code: 'en-US', name: 'English' },
+    { code: 'ar', name: 'العربية' }
+  ]
+
+  onChange() {
+    window.location.href = `/${this.activeLocale}`
+  }
 
   buttons: {
     label: string,

@@ -27,17 +27,19 @@ Install dependencies:
   npm install
 ```
 
-Start the server:
+Start the development server:
 
 ```bash
     ng serve
 ```
 
-Start the ar server:
+Start the arabic development server:
 
 ```bash
     ng serve --configuration ar
 ```
+
+✋ Heads up » When we run ng serve or npm start our app will run in development mode with our source locale, and our locale switcher won’t work.
 
 ## Features
 
