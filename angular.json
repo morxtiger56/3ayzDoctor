@@ -82,7 +82,16 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "namedChunks": true,
+              "sourceMap": true,
+              "localize": ["en-US"]
+            },
+            "ar": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "localize": ["ar"]
             }
           },
           "defaultConfiguration": "production"
@@ -95,6 +104,9 @@
             },
             "development": {
               "buildTarget": "3ayzDoctor:build:development"
+            },
+            "ar": {
+              "buildTarget": "3ayzDoctor:build:ar"
             }
           },
           "defaultConfiguration": "development"

@@ -1,27 +1,94 @@
-# 3ayzDoctor
+# 3ayz doctor
+Powered by Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+This project includes the tak aquired by it spark
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Authors
 
-## Code scaffolding
+- [@Mohamed Salah](https://github.com/MohamedSalah-ElMaestroCode)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Technologies Included
+- Angular
+- Tailwindcss
+- PrimeNG UI Components
+## Run Locally
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone the project:
 
-## Running unit tests
+```bash
+  git clone https://github.com/morxtiger56/3ayzDoctor
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Install dependencies:
 
-## Running end-to-end tests
+```bash
+  npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Start the server:
 
-## Further help
+```bash
+    ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Start the ar server:
+
+```bash
+    ng serve --configuration ar
+```
+
+## Features
+
+- Localization
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+
+## Project Structure
+
+Here is the folder structure for the project
+
+```bash
+- /src
+    - /app
+        - /lib
+            - utils
+            - ....
+        - /services
+            - api.service.ts
+        - /directives
+            - component.directive.ts
+        - /models
+            - IDoctor.ts
+            - IOffer.ts
+            - ...
+        - /components
+            - /card
+                - card.component.ts
+            - /footer
+                - footer.component.ts
+                - footer.component.html
+            - ...
+        - /home-page
+            - home-page.component.ts
+            - home-page.component.html
+            - home-page.component.css
+        - ...
+    - app.routes.ts
+    - ...
+
+```
+#### Folders Description
+- components folder: contains all the shared components between pages
+
+- lib folders: contains all the utilite methods aquired by the project
+
+- services folder: holds the services and the logic to connect to external apis
+
+- folders ending with -page: are folders contains the logic and code for each and every page
+
+- app.routes.ts: contains the main router for the app
+
