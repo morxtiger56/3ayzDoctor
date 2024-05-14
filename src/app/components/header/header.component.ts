@@ -23,23 +23,23 @@ export class HeaderComponent {
     icon?: any
   }[] = [
       {
-        label: "home",
+        label: $localize`home`,
         icon: faHome
       },
       {
-        label: "Book a doctor",
+        label: $localize`Book a doctor`,
         icon: faUserDoctor
       },
       {
-        label: "Medical Services",
+        label: $localize`Medical Services`,
         icon: faKitMedical
       },
       {
-        label: "Contact Us",
+        label: $localize`Contact Us`,
         icon: faPhone
       },
       {
-        label: "add your clinic",
+        label: $localize`add your clinic`,
         icon: faPlus
       }
     ]
