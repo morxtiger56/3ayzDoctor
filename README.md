@@ -41,6 +41,13 @@ Start the arabic development server:
 
 ✋ Heads up » When we run ng serve or npm start our app will run in development mode with our source locale, and our locale switcher won’t work.
 
+You can build our app and run our production test server:
+
+```bash
+    ng build --localize --configuration production
+    node serve-prod-test.js
+```
+
 ## Features
 
 - Localization

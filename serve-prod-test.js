@@ -6,7 +6,7 @@
 const path = require('path');
 const express = require('express');
 const port = 8080;
-const rootDir = path.join(__dirname, 'dist/3ayz-doctor');
+const rootDir = path.join(__dirname, 'dist/browser/3ayz-doctor');
 const locales = ['en-US', 'ar'];
 const defaultLocale = 'en-US';
 const server = express();
@@ -27,6 +27,7 @@ server.get('/', (req, res) =>
   res.redirect(`/${defaultLocale}`)
 )
 
-server.listen(port, () =>
+server.listen(port, () => {
   console.log(`App running at port ${port}…`)
-)
+  console.log("http://localhost:8080")
+})
