@@ -1,6 +1,8 @@
 <app-section>
   <app-section-header>
-    Welcome، What do you want to look for today?
+    <span i18n>
+      Welcome، What do you want to look for today?
+    </span>
   </app-section-header>
   <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
     speed="500">
@@ -17,7 +19,10 @@
           <app-card-title [title]="item.name" />
           <app-card-description [description]="item.speciality" />
           <div class="flex items-center gap-2">
-            Rating: <app-rating [rating]="item.rating" />
+            <span i18n>
+              Rating:
+            </span>
+            <app-rating [rating]="item.rating" />
           </div>
           <div class="flex justify-end my-2">
             <a href="#" class="__primary_button__">
@@ -34,7 +39,9 @@
 
 <app-section>
   <app-section-header>
-    Book Online Doctor with 3ayz Doctor
+    <span i18n>
+      Book Online Doctor with 3ayz Doctor
+    </span>
   </app-section-header>
   <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
     speed="500">
@@ -74,10 +81,14 @@
 
 <app-section>
   <app-section-header>
-    Exclusive offers from medical services
+    <span i18n>
+      Exclusive offers from medical services
+    </span>
   </app-section-header>
   <app-section-header-description>
-    enjoy healthy life deals and offers from 3ayz Doctor
+    <span i18n>
+      enjoy healthy life deals and offers from 3ayz Doctor
+    </span>
   </app-section-header-description>
   <div class="my-4">
     <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
@@ -85,7 +96,7 @@
       @for(item of rating; track item.id){
       <swiper-slide class="p-10">
         <app-card [full]="true" class="relative">
-          <span class="absolute px-4 py-1 bg-primary text-white rounded-md">
+          <span class="absolute px-4 py-1 bg-primary text-white rounded-md" i18n>
             Offer
           </span>
           <app-card-content class="w-full">
@@ -110,7 +121,9 @@
 
 <app-section>
   <app-section-header>
-    Find doctors in top specialities
+    <span i18n>
+      Find doctors in top specialities
+    </span>
   </app-section-header>
   <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
     speed="500">
@@ -132,10 +145,14 @@
 
 <app-section>
   <app-section-header>
-    3 Steps to Better Health with 3ayzDoctor.com
+    <span i18n>
+      3 Steps to Better Health with 3ayzDoctor.com
+    </span>
   </app-section-header>
   <app-section-header-description>
-    Do this basic things and have a healthy life
+    <span i18n>
+      Do this basic things and have a healthy life
+    </span>
   </app-section-header-description>
   <div class="flex flex-col md:flex-row gap-4">
     <div class="relative bg-black aspect-square flex-1">
@@ -156,6 +173,8 @@
 
 <app-section>
   <app-section-header class="text-center">
-    What our users say about us?
+    <span i18n>
+      What our users say about us?
+    </span>
   </app-section-header>
 </app-section>

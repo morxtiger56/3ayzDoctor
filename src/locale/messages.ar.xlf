@@ -60,6 +60,106 @@
         اضف عيادتك
         </target>
       </trans-unit>
+      <trans-unit id="6011711846865777506" datatype="html">
+        <source> Welcome، What do you want to look for today? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">4,5</context>
+          </context-group>
+          <target>
+مرحبا ، ما الذي تريد أن تبحث عنه اليوم؟
+          </target>
+      </trans-unit>
+      <trans-unit id="3779028521714562026" datatype="html">
+        <source> Rating: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <target>
+        تقيم
+        </target>
+      </trans-unit>
+      <trans-unit id="5682568160414387120" datatype="html">
+        <source> Book Online Doctor with 3ayz Doctor </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">41,42</context>
+          </context-group>
+          <target>
+احجز دكتور اونلاين
+          </target>
+      </trans-unit>
+      <trans-unit id="6494012092343679280" datatype="html">
+        <source> Exclusive offers from medical services </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">83,84</context>
+          </context-group>
+          <target>
+          اقوي العروض في المراكز الطبية
+          </target>
+      </trans-unit>
+      <trans-unit id="2660746072610958294" datatype="html">
+        <source> enjoy healthy life deals and offers from 3ayz Doctor </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+       <target>
+       استفيد بافضل استكشف المزيد من العروض و تمتع بصحة جيدة
+          </target>
+      </trans-unit>
+      <trans-unit id="8022735785658517162" datatype="html">
+        <source> Offer </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+       <target>
+       عرض
+          </target>
+      </trans-unit>
+      <trans-unit id="9049699934742694277" datatype="html">
+        <source> Find doctors in top specialities </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">123,124</context>
+        </context-group>
+       <target>
+       اختار دكتور حسب التخصص
+          </target>
+      </trans-unit>
+      <trans-unit id="8899797745863006425" datatype="html">
+        <source> 3 Steps to Better Health with 3ayzDoctor.com </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">147,148</context>
+        </context-group>
+       <target>
+       3 خطوات لصحة افضل
+          </target>
+      </trans-unit>
+      <trans-unit id="7341897056460408167" datatype="html">
+        <source> Do this basic things and have a healthy life </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">152,153</context>
+        </context-group>
+       <target>
+       افعل هذة الاشياء البسيطة واحصل على صحة افضل
+          </target>
+      </trans-unit>
+      <trans-unit id="3360721573433175193" datatype="html">
+        <source> What our users say about us? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">175,176</context>
+        </context-group>
+        <target>
+ماذا يقول عملائنا؟
+        </target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
