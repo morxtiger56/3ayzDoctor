@@ -14,8 +14,8 @@
           <button class="absolute top-0 right-0 __ghost_button__">
             <fa-icon [icon]="shareIcon" />
           </button>
-          <app-card-title title="algam alka" />
-          <app-card-description description="Eye doctor specialist" />
+          <app-card-title [title]="item.name" />
+          <app-card-description [description]="item.speciality" />
           <div class="flex items-center gap-2">
             Rating: <app-rating [rating]="item.rating" />
           </div>
