@@ -27,8 +27,12 @@
   </div>
   <div class="flex items-center mx-2">
     <p-dropdown class="capitalize" optionLabel="name" (onChange)="onChange()" optionValue="code" [options]="locals"
-      [(ngModel)]="activeLocale" placeholder="language" />
-    <fa-icon [icon]="globeIcon" />
+      [(ngModel)]="activeLocale" placeholder="language">
+      <ng-template let-item pTemplate="selectedItem">
+        <fa-icon [icon]="globeIcon" class="mx-1" />
+        {{item.name}}
+      </ng-template>
+    </p-dropdown>
   </div>
 </header>
 
