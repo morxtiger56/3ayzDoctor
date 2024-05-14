@@ -4,6 +4,16 @@
       Welcome، What do you want to look for today?
     </span>
   </app-section-header>
+  <app-filters />
+</app-section>
+
+
+<app-section>
+  <app-section-header>
+    <span i18n>
+      Doctors you may like them
+    </span>
+  </app-section-header>
   <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
     speed="500">
     @for(item of doctors; track item.name){

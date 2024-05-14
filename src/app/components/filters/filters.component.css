@@ -1,0 +1,7 @@
+.__cutome_auto_complete__ {
+  all: reset;
+  & .p-autocomplete {
+    padding-block: 1rem;
+    padding-inline: 0.75rem;
+  }
+}

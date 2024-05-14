@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { ApiService } from '../services/api.service';
 import { IDoctor } from '../models/IDoctor';
 import { RatingComponent } from '../components/rating/rating.component';
+import { FiltersComponent } from '../components/filters/filters.component';
 
 @Component({
   selector: 'app-home-page',
@@ -23,7 +24,8 @@ import { RatingComponent } from '../components/rating/rating.component';
     CommonModule,
     SectionHeaderComponent,
     SectionHeaderDescriptionComponent,
-    RatingComponent
+    RatingComponent,
+    FiltersComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',

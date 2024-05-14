@@ -10,42 +10,42 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">55,56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4976935068632868195" datatype="html">
         <source>home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6725881818192970384" datatype="html">
         <source>Book a doctor</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5345350650708988236" datatype="html">
         <source>Medical Services</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="759687838251957893" datatype="html">
         <source>Contact Us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4822201054888724498" datatype="html">
         <source>add your clinic</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header/header.component.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6011711846865777506" datatype="html">
@@ -55,67 +55,74 @@
           <context context-type="linenumber">4,5</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6487321602234256826" datatype="html">
+        <source> Doctors you may like them </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="3779028521714562026" datatype="html">
         <source> Rating: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5682568160414387120" datatype="html">
         <source> Book Online Doctor with 3ayz Doctor </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
-          <context context-type="linenumber">43,44</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6494012092343679280" datatype="html">
         <source> Exclusive offers from medical services </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
-          <context context-type="linenumber">85,86</context>
+          <context context-type="linenumber">93,94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2660746072610958294" datatype="html">
         <source> enjoy healthy life deals and offers from 3ayz Doctor </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
-          <context context-type="linenumber">90,91</context>
+          <context context-type="linenumber">98,99</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8022735785658517162" datatype="html">
         <source> Offer </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
-          <context context-type="linenumber">100</context>
+          <context context-type="linenumber">108</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9049699934742694277" datatype="html">
         <source> Find doctors in top specialities </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
-          <context context-type="linenumber">125,126</context>
+          <context context-type="linenumber">133,134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8899797745863006425" datatype="html">
         <source> 3 Steps to Better Health with 3ayzDoctor.com </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
-          <context context-type="linenumber">149,150</context>
+          <context context-type="linenumber">157,158</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7341897056460408167" datatype="html">
         <source> Do this basic things and have a healthy life </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
-          <context context-type="linenumber">154,155</context>
+          <context context-type="linenumber">162,163</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3360721573433175193" datatype="html">
         <source> What our users say about us? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-page/home-page.component.html</context>
-          <context context-type="linenumber">177,178</context>
+          <context context-type="linenumber">185,186</context>
         </context-group>
       </trans-unit>
     </body>

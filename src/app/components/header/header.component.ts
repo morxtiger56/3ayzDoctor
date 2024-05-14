@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Inject, LOCALE_ID } from '@angular/core';
+import { Component, Inject, LOCALE_ID, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBars, faGlobe, faHome, faKitMedical, faPhone, faPlus, faUserDoctor } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +12,8 @@ import { SidebarModule } from 'primeng/sidebar';
   standalone: true,
   imports: [FontAwesomeModule, DropdownModule, CommonModule, FormsModule, SidebarModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 
 export class HeaderComponent {

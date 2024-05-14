@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Order */
+@layer reset, primeng;
+
 .__primary_button__ {
   @apply px-4 text-white bg-primary rounded-md h-fit py-2 transition-colors hover:bg-transparent hover:text-primary hover:outline hover:outline-1 hover:outline-primary font-semibold text-sm
 }

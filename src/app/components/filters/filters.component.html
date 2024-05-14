@@ -1,0 +1,52 @@
+<div class="py-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+  <div class="p-mr-2 p-input">
+    <div class="p-inputgroup flex items-center">
+      <span class="bg-primary p-inputgroup-addon">
+        <fa-icon [icon]="doctorIcon" class="text-white" />
+      </span>
+      <p-autoComplete styleClass="w-full" inputStyleClass="p-2 w-full" [(ngModel)]="queryItem" class="flex-1 text-black"
+        [placeholder]="'search'" [virtualScroll]="true" [suggestions]="filteredSuggetions" [virtualScrollItemSize]="34"
+        (completeMethod)="search($event)" field="label" [dropdown]="true">
+        <ng-template let-items pTemplate="items">
+          <div class="text-black">
+            {{items}}
+          </div>
+        </ng-template>
+      </p-autoComplete>
+    </div>
+  </div>
+
+  <div class="p-mr-2 p-input">
+    <div class="p-inputgroup flex items-center">
+      <span class="bg-primary p-inputgroup-addon">
+        <fa-icon [icon]="stethoscopeIcon" class="text-white" />
+      </span>
+      <p-autoComplete styleClass="w-full" inputStyleClass="p-2 w-full" [(ngModel)]="queryItem" class="flex-1 text-black"
+        [placeholder]="'search'" [virtualScroll]="true" [suggestions]="filteredSuggetions" [virtualScrollItemSize]="34"
+        (completeMethod)="search($event)" field="label" [dropdown]="true">
+        <ng-template let-items pTemplate="items">
+          <div class="text-black">
+            {{items}}
+          </div>
+        </ng-template>
+      </p-autoComplete>
+    </div>
+  </div>
+  <div class="p-mr-2 p-input">
+    <div class="p-inputgroup flex items-center">
+      <span class="bg-primary p-inputgroup-addon">
+        <fa-icon [icon]="locationIcon" class="text-white" />
+      </span>
+      <p-autoComplete styleClass="w-full" inputStyleClass="p-2 w-full" [(ngModel)]="queryItem" class="flex-1 text-black"
+        [placeholder]="'search'" [virtualScroll]="true" [suggestions]="filteredSuggetions" [virtualScrollItemSize]="34"
+        (completeMethod)="search($event)" field="label" [dropdown]="true">
+        <ng-template let-items pTemplate="items">
+          <div class="text-black">
+            {{items}}
+          </div>
+        </ng-template>
+      </p-autoComplete>
+    </div>
+  </div>
+  <button type="button" class="__primary_button__">Search</button>
+</div>
