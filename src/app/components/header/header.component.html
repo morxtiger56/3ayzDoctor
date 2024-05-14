@@ -1,8 +1,13 @@
 <header class="flex px-4 py-4 shadow-md">
   <div class="container mx-auto flex items-center justify-between">
-    <a href="/">
-      <img class="w-24 md:w-full max-w-48" src="/assets/logo.png" alt="">
-    </a>
+    <div class="flex gap-1 items-center">
+      <button type="button" class="block md:hidden __icon_only_button__" (click)="sidebarVisiable = true">
+        <fa-icon [icon]="menuIcon" />
+      </button>
+      <a href="/">
+        <img class="w-24 md:w-full max-w-48" src="/assets/logo.png" alt="">
+      </a>
+    </div>
     <nav class="hidden md:flex">
       @for(item of buttons; track item.label){
       <a href="#"
@@ -16,7 +21,7 @@
       </a>
       }
     </nav>
-    <button class="__primary_button__" i18n>
+    <button class="hidden md:block __primary_button__" i18n>
       Sign up
     </button>
   </div>
@@ -26,3 +31,23 @@
     <fa-icon [icon]="globeIcon" />
   </div>
 </header>
+
+<p-sidebar [(visible)]="sidebarVisiable">
+  <nav class="flex flex-col gap-2">
+    @for(item of buttons; track item.label){
+    <a href="#"
+      class="__ghost_button__  flex items-baseline gap-1 px-2 py-2 text-sm capitalize last:outline-dashed last:outline-1 last:outline-yellow-500">
+      @if(item.icon){
+      <fa-icon [icon]="item.icon" class="text-inherit" />
+      }
+      <span>
+        {{item.label}}
+      </span>
+    </a>
+    }
+  </nav>
+
+  <button class="__primary_button__ my-2" i18n>
+    Sign up
+  </button>
+  <p-sidebar>

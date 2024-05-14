@@ -12,6 +12,10 @@
   @apply transition-colors hover:text-primary
 }
 
+.__icon_only_button__ {
+  @apply text-lg p-2 text-black hover:bg-black/20 bg-transparent transition-colors
+}
+
 html, body {
   height: 100%;
 }
