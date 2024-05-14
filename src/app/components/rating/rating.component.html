@@ -1,0 +1,7 @@
+<div class="flex gap-1 items-center">
+  @for(item of getRating(rating); track item){
+  <fa-icon [class]="classSet('text-xs', {
+      'text-yellow-300': item
+    })" [icon]="ratingStar" />
+  }
+</div>

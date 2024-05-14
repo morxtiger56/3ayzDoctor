@@ -4,7 +4,7 @@
   </app-section-header>
   <swiper-container pagination="true" navigation="true" allow-touch-move="true" mousewheel="true" keyboard="true"
     speed="500">
-    @for(item of rating; track item.id){
+    @for(item of doctors; track item.name){
     <swiper-slide class="p-10">
       <app-card>
         <div class="relative aspect-square w-44 rounded-full">
@@ -16,13 +16,8 @@
           </button>
           <app-card-title title="algam alka" />
           <app-card-description description="Eye doctor specialist" />
-          <div class="flex gap-2">
-            Rating:
-            <div class="flex gap-1 items-center">
-              @for(item of rating; track item.id){
-              <fa-icon class="text-xs text-yellow-300 " [icon]="ratingStar" />
-              }
-            </div>
+          <div class="flex items-center gap-2">
+            Rating: <app-rating [rating]="item.rating" />
           </div>
           <div class="flex justify-end my-2">
             <a href="#" class="__primary_button__">
@@ -144,13 +139,13 @@
   </app-section-header-description>
   <div class="flex flex-col md:flex-row gap-4">
     <div class="relative bg-black aspect-square flex-1">
-        <img src="/assets/why-join-1.webp" class="absolute top-0 w-full h-full object-fill" alt="">
+      <img src="/assets/why-join-1.webp" class="absolute top-0 w-full h-full object-fill" alt="">
     </div>
     <div class="relative bg-black aspect-square flex-1">
-        <img src="/assets/why-join-2.webp" class="absolute top-0 w-full h-full object-fill" alt="">
+      <img src="/assets/why-join-2.webp" class="absolute top-0 w-full h-full object-fill" alt="">
     </div>
     <div class="relative bg-black aspect-square flex-1">
-        <img src="/assets/why-join-3.webp" class="absolute top-0 w-full h-full object-fill" alt="">
+      <img src="/assets/why-join-3.webp" class="absolute top-0 w-full h-full object-fill" alt="">
     </div>
   </div>
 </app-section>

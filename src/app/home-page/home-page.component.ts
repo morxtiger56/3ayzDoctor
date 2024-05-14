@@ -5,6 +5,9 @@ import { faStar, faShareAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SectionComponent, SectionHeaderComponent, SectionHeaderDescriptionComponent } from '../components/section/section.component';
 import { CommonModule } from '@angular/common';
+import { ApiService } from '../services/api.service';
+import { IDoctor } from '../models/IDoctor';
+import { RatingComponent } from '../components/rating/rating.component';
 
 @Component({
   selector: 'app-home-page',
@@ -19,7 +22,8 @@ import { CommonModule } from '@angular/common';
     FontAwesomeModule,
     CommonModule,
     SectionHeaderComponent,
-    SectionHeaderDescriptionComponent
+    SectionHeaderDescriptionComponent,
+    RatingComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',
@@ -27,9 +31,13 @@ import { CommonModule } from '@angular/common';
 })
 
 export class HomePageComponent implements OnInit {
+
+  doctors: IDoctor[] = []
+
+  constructor(public apiService: ApiService) { }
+
   ngOnInit(): void {
     const swiperElements = document.querySelectorAll('swiper-container')
-
     swiperElements.forEach(element => {
       if (element.getAttribute('data-dont-resize')) {
         return
@@ -47,6 +55,9 @@ export class HomePageComponent implements OnInit {
         },
       }
     })
+
+    this.doctors = this.apiService.Get('doctors') ?? []
+
   }
 
   rating = Array.from({ length: 5 }, (_, i) => ({ id: i }))
