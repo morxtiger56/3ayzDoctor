@@ -1,4 +1,4 @@
-<header class="bg-white flex px-4 py-4 shadow-md">
+<header class="fixed z-50 w-full top-0 bg-white flex px-4 py-4 shadow-md">
   <div class="container mx-auto flex items-center justify-between">
     <div class="flex gap-1 items-center">
       <button type="button" class="block md:hidden __icon_only_button__" (click)="sidebarVisiable = true">
@@ -36,7 +36,7 @@
   </div>
 </header>
 
-<p-sidebar [(visible)]="sidebarVisiable">
+<p-sidebar [(visible)]="sidebarVisiable" class="z-50">
   <nav class="flex flex-col gap-2">
     @for(item of buttons; track item.label){
     <a href="#"
@@ -54,4 +54,4 @@
   <button class="__primary_button__ my-2" i18n>
     Sign up
   </button>
-  <p-sidebar>
+</p-sidebar>
